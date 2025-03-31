@@ -104,7 +104,7 @@ This is a writeup for the "Bricks Heist" challenge on TryHackMe, found [here](ht
 
 ### 5. Find the Hidden File
 - Listed files in the web root:
-  #### p.s started using '' because # is treated as a comment :p
+  #### p.s started using ' ' because # is treated as a comment :p
   ```bash
   '# ls'
   ```
