@@ -1,6 +1,6 @@
 
 
-# Bounty Hunter - TryHackMe Writeup
+# Bounty Hacker - TryHackMe Writeup
 
 This is a writeup for the "Bounty Hunter" challenge on TryHackMe, you can find [here](https://tryhackme.com/room/cowboyhacker). 
 
