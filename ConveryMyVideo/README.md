@@ -99,7 +99,7 @@ Retrieve two flags:
   ```
 
 ### 4. Explore as www-data
-- ran linpeas and found clean.sh running as a crontab
+- ran pspy64 and found clean.sh running as a crontab
 
 - Navigated to `/var/www/html/tmp`:
   ```bash
