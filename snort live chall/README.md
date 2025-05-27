@@ -107,7 +107,7 @@
      ```
    - Flag: `THM{0ead8c494861079b1b74ec2380d2cd24}`.
 
-**Answers** (per your input):
+**Answers** :
 - **Flag**: `THM{0ead8c494861079b1b74ec2380d2cd24}`
 - **Used protocol/port in the attack**: `tcp/4444`
 - **Tool highly associated with this port**: `Metasploit`  
