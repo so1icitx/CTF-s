@@ -44,7 +44,6 @@ Submit the domain `www[.]paypal[.]com4uswebappsresetaccountrecovery[.]timeseaway
 
 **Screenshots**:
 ![VirusTotal URL Analysis](./screenshots/vt_url_analysis.png)
-![VirusTotal IP Details](./screenshots/vt_ip_details.png)
 
 ### Step 3: Extract Email Address
 
