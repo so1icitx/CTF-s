@@ -63,16 +63,8 @@ Under **VirusTotal**’s **Relations > Passive DNS Replication** for `169.239.12
 
 ### Step 5: Inspect User-Agent in Web Traffic
 
-In **Wireshark**, filter for `ip.dst == 169.239.128.11 && http` to inspect HTTP traffic to the destination IP. Follow the TCP stream (right-click > Follow > TCP Stream) to view the HTTP request. The **User-Agent** is `REBOL View 2.7.8.3.1`.
+In **Wireshark**, filter for `http` to inspect HTTP traffic.  The **User-Agent** is `REBOL View 2.7.8.3.1`.
 
-**Wireshark Output**:
-```
-GET /r?x=bmFtZT1TVE9DS0lURk9SVVNcZHdpZ2h0Lm1vcmFsZXMmb3M9MTAuMCZhcmNoPXg4NiZidWlsZD0xLjAuMg== HTTP/1.0
-Accept: */*
-Connection: close
-User-Agent: REBOL View 2.7.8.3.1
-Host: fidufagios.com
-```
 
 **Answer**:
 - **What is the user-agent in the traffic?** `REBOL View 2.7.8.3.1`
