@@ -133,8 +133,3 @@ In **Wireshark**, filter for `ip.dst == 192.36.27.92 && http`. Follow the HTTP s
 **Screenshot**:
 ![Wireshark TCP Stream 192.36.27.92](./screenshots/wireshark_tcp_stream_192.png)
 
-- **Screenshots**: Embedded using `![Description](./screenshots/filename.png)`, assuming they’re in the repository’s `screenshots/` folder. Filenames reflect context (e.g., `brim_alert_signature.png`). Ensure screenshots are uploaded to GitHub.
-- **Artifacts**: Includes `malicious_indicators.txt` and `mirrorblast_c2.suricata` with unique UUIDs.
-- **Defanging**: IPs (`[.]`), domains (`[.]`), and URIs (`hxxp://`) are defanged per request.
-- **Time**: Analysis as of June 08, 2025, 09:49 AM EEST.
-- If specific screenshot filenames or additional details are needed, please clarify!
