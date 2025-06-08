@@ -74,7 +74,7 @@ In **Wireshark**, filter for `http` to inspect HTTP traffic.  The **User-Agent**
 
 ### Step 6: Identify Additional Malicious IP Addresses
 
-In **Wireshark**, filter for HTTP traffic with `http.request` to identify other destination IPs. Search each IP in **VirusTotal** to confirm malicious activity. Two additional IPs are flagged as **MirrorBlast C2** servers:
+In **Wireshark**, filter for HTTP traffic with `http and ip.src == 172.16.1.102` to identify other destination IPs. Search each IP in **VirusTotal** to confirm malicious activity. Two additional IPs are flagged as **MirrorBlast C2** servers:
 
 - `185.10.68.235`
 - `192.36.27.92`
