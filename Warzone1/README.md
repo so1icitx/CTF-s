@@ -5,7 +5,7 @@
 
 ### Step 1: Identify the Alert Signature
 
-Using **Brim**, load `Zone1.pcap` and filter for `event_type=="alert"`. The **Suricata Alerts by Category** query reveals 28 alerts under **Malware Command and Control Activity Detected**. Right-clicking and selecting **New search with this value** shows the alert signature.
+Using **Brim**, load `Zone1.pcap` and filter for `event_type=="alert"`.
 
 **Brim Output**: 
 - Signature: `ET MALWARE MirrorBlast CnC Activity M3`
@@ -34,7 +34,7 @@ In **Brim**, inspect the alert details for source and destination IPs. Use **Cyb
 
 **Screenshots**:
 ![CyberChef Defang Source IP](./screenshots/cyberchef_defang_source_ip.png)
-![CyberChef Defang Destination IP](./screenshots/cyberchef_defang_dest_ip.png)
+![CyberChef Defang Destination IP](./screenshots/210.png)
 
 ### Step 3: Analyze Destination IP in VirusTotal
 
