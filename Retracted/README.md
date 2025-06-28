@@ -55,7 +55,7 @@ On January 8, 2024, Sophie, a user at a charity organization, experienced a rans
 
 **Log**:
 - Event Viewer log and Edge download history confirm the file.
-![Download Event](./screenshots/6.png)
+![Download Event](./screenshots/20.png)
 
 **Answer**: The filename is `antivirus.exe`.
 
@@ -68,7 +68,7 @@ On January 8, 2024, Sophie, a user at a charity organization, experienced a rans
 
 **Log**:
 - Event Viewer log (Sysmon Event ID 1) and Edge download history confirm the file was saved to the Downloads folder.
-![Download Event](./screenshots/6.png)
+![Download Event](./screenshots/21.png)
 
 **Answer**: The download location is `C:\Users\Sophie\download`.
 
