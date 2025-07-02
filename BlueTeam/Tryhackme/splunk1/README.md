@@ -1,7 +1,6 @@
 # Investigating with Splunk: Windows Machine Backdoor Incident
 
-SOC Analyst Johny observed anomalous behaviors in logs from several Windows machines at Wayne Enterprises, indicating that an adversary gained access and created backdoors. The logs from suspected hosts were ingested into Splunk’s `main` index for investigation. This README details the analysis of these logs using Splunk Search Processing Language (SPL) to identify anomalies, focusing on a backdoor user, registry changes, impersonation attempts, and malicious PowerShell activity. Findings are supported by screenshots in `./screenshots/*.png`, adhering to the provided input without additional assumptions.
-
+SOC Analyst Johny observed anomalous behaviors in logs from several Windows machines at Wayne Enterprises, indicating that an adversary gained access and created backdoors. 
 ## Scenario
 
 An adversary has compromised Windows machines, creating a backdoor user and executing suspicious PowerShell commands. The task is to analyze logs in the `main` index to answer specific questions about the incident, including event counts, backdoor user details, registry changes, impersonation, commands used, login attempts, affected hosts, and malicious web requests.
