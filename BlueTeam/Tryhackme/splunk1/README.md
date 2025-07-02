@@ -110,22 +110,5 @@ An adversary has compromised Windows machines, creating a backdoor user and exec
 
 **Answer**: `http://10.10.10.5/news.php`
 
-## Splunk Configuration
-- **Index**: `main` contains logs from Windows Event Logs (`wineventlog`), Sysmon (`XmlWinEventLog`), PowerShell (`powershell`), and HTTP traffic (`stream:http`).
-- **Search**: Used SPL queries in the Search & Reporting App, filtering by `sourcetype`, `user`, `host`, `src_ip`, and `EventCode`.
-- **Data Ingestion**: Logs from suspected hosts were ingested via Splunk Forwarders, processed by Indexers, and searched via the Search Head.
 
-## Recommendations
-- **Remove Backdoor User**: Delete the `a1berto` account from `James.browne` and other hosts.
-- **Reset Credentials**: Reset passwords for `Alberto` and other legitimate users to prevent impersonation.
-- **Block Malicious IP**: Add `10.10.10.5` to firewall blocklists to prevent C2 communication.
-- **Audit Registry**: Remove or monitor changes to `HKLM\SAM\SAM\Domains\Account\Users\Names\A1berto`.
-- **Investigate WMIC**: Review remote WMIC usage (`WMIC.exe`) and restrict to authorized systems.
-- **Enhance PowerShell Logging**: Ensure PowerShell Script Block Logging captures all commands for future analysis.
-- **Alerting**: Create Splunk alerts for:
-  - New user creation: `index=main sourcetype=wineventlog EventCode=4720`.
-  - Suspicious PowerShell: `index=main sourcetype=powershell A1berto`.
 
-## Documentation
-- Splunk Documentation: [docs.splunk.com](https://docs.splunk.com)
-- SPL Reference: [docs.splunk.com/Documentation/Splunk/9.0.0/SearchReference](https://docs.splunk.com/Documentation/Splunk/9.0.0/SearchReference)
