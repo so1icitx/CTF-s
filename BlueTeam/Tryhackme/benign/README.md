@@ -90,11 +90,6 @@ Suspicious scheduled tasks and process executions suggest an adversary has compr
 **Finding**: The pattern is `THM{KJ&*H^B0}`.
 **Answer**: `THM{KJ&*H^B0}`
 
-
-![URL](screenshots/5.png)
-![URL](screenshots/6.png)
-![URL](screenshots/7.png)
-
 ### 10. URL Connected by the Infected Host
 **Question**: What is the URL that the infected host connected to?
 
