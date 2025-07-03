@@ -60,9 +60,6 @@ Suspicious scheduled tasks and process executions suggest an adversary has compr
 
 **Finding**: The LOLBIN is `certutil.exe`.
 
-![LOLBIN](screenshots/5.png)
-![LOLBIN](screenshots/6.png)
-![LOLBIN](screenshots/7.png)
 
 **Answer**: `certutil.exe`
 
@@ -70,32 +67,18 @@ Suspicious scheduled tasks and process executions suggest an adversary has compr
 **Question**: What was the date that this binary was executed by the infected host? (Format: YYYY-MM-DD)
 
 **Finding**: The binary was executed on `2022-03-04`.
-
-![Execution Date](screenshots/5.png)
-![Execution Date](screenshots/6.png)
-![Execution Date](screenshots/7.png)
-
 **Answer**: `2022-03-04`
-
 ### 7. Third-Party Site for Payload Download
 **Question**: Which third-party site was accessed to download the malicious payload?
 
 **Finding**: The site is `controlc.com`.
-
-![Third-Party Site](screenshots/5.png)
-![Third-Party Site](screenshots/6.png)
-![Third-Party Site](screenshots/7.png)
-
 **Answer**: `controlc.com`
-
 ### 8. Name of the File Saved from C2 Server
 **Question**: What is the name of the file that was saved on the host machine from the C2 server during the post-exploitation phase?
 
 **Finding**: The file is `benign.exe`.
 
-![File Name](screenshots/5.png)
-![File Name](screenshots/6.png)
-![File Name](screenshots/7.png)
+
 
 **Answer**: `benign.exe`
 
@@ -105,10 +88,12 @@ Suspicious scheduled tasks and process executions suggest an adversary has compr
 **Search**: Queried `index=win_eventlogs EventCode=4688 benign.exe` and inspected related logs, confirming the file content via the C2 URL.
 
 **Finding**: The pattern is `THM{KJ&*H^B0}`.
-
-![Malicious Pattern](screenshots/8.png)
-
 **Answer**: `THM{KJ&*H^B0}`
+
+
+![URL](screenshots/5.png)
+![URL](screenshots/6.png)
+![URL](screenshots/7.png)
 
 ### 10. URL Connected by the Infected Host
 **Question**: What is the URL that the infected host connected to?
@@ -117,9 +102,7 @@ Suspicious scheduled tasks and process executions suggest an adversary has compr
 
 **Finding**: The URL is `https://controlc.com/e4d11035`.
 
-![URL](screenshots/5.png)
-![URL](screenshots/6.png)
-![URL](screenshots/7.png)
+![URL](screenshots/8.png)
 
 **Answer**: `https://controlc.com/e4d11035`
 
