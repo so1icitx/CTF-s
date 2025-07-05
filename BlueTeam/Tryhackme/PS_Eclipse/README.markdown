@@ -67,7 +67,7 @@ Keegan’s machine is operational but exhibits files with strange extensions, ra
 ### 6. Address of Remote Server Connection
 **Question**: The suspicious binary connected to a remote server. What address did it connect to? Add http:// to your answer & defang the URL.
 
-**Search**: Queried `index=* EventCode=11 OUTSTANDING_GUTTER.exe` for dns query identifying a similar URL as the download source.
+**Search**: Queried `index=* EventCode=22 OUTSTANDING_GUTTER.exe` for dns query identifying a similar URL as the download source.
 
 **Finding**: The binary connected to `hxxp[://]9030-181-215-214-32[.]ngrok[.]io`.
 
@@ -78,7 +78,7 @@ Keegan’s machine is operational but exhibits files with strange extensions, ra
 ### 7. Name of the Downloaded PowerShell Script
 **Question**: A PowerShell script was downloaded to the same location as the suspicious binary. What was the name of the file?
 
-**Search**: Queried `index=* sourcetype=WinEventLog:Security C:\Windows\Temp` for file creation events in the same directory as `OUTSTANDING_GUTTER.exe`.
+**Search**: Queried `index=* *\Temp\*.ps1 for .ps1 in the same directory as `OUTSTANDING_GUTTER.exe`.
 
 **Finding**: The script is `script.ps1`.
 
@@ -101,7 +101,7 @@ Keegan’s machine is operational but exhibits files with strange extensions, ra
 ### 9. Full Path of the Ransomware Note
 **Question**: A ransomware note was saved to disk, which can serve as an IOC. What is the full path to which the ransom note was saved?
 
-**Search**: Queried `index=* sourcetype=WinEventLog:Security BlackSun` for file creation events, finding the ransom note path.
+**Search**: Queried `index=* EventCode = 11 .txt` finding the ransom note path.
 
 **Finding**: The path is `C:\Users\keegan\Downloads\vasg6b0wmw029hd\BlackSun_README.txt`.
 
@@ -112,7 +112,7 @@ Keegan’s machine is operational but exhibits files with strange extensions, ra
 ### 10. Full Path of the Wallpaper Image
 **Question**: The script saved an image file to disk to replace the user's desktop wallpaper, which can also serve as an IOC. What is the full path of the image?
 
-**Search**: Queried `index=* sourcetype=WinEventLog:Security BlackSun` for image file creation events, identifying `blacksun.jpg`.
+**Search**: Queried `index=* BlackSun` for image file creation events, identifying `blacksun.jpg` got info from a writeup.
 
 **Finding**: The path is `C:\Users\Public\Pictures\blacksun.jpg`.
 
