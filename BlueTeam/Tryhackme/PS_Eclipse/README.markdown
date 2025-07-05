@@ -67,7 +67,7 @@ Keegan’s machine is operational but exhibits files with strange extensions, ra
 ### 6. Address of Remote Server Connection
 **Question**: The suspicious binary connected to a remote server. What address did it connect to? Add http:// to your answer & defang the URL.
 
-**Search**: Queried `index=* EventCode=3 OUTSTANDING_GUTTER.exe` for outbound network connections, identifying the same URL as the download source.
+**Search**: Queried `index=* EventCode=11 OUTSTANDING_GUTTER.exe` for dns query identifying a similar URL as the download source.
 
 **Finding**: The binary connected to `hxxp[://]9030-181-215-214-32[.]ngrok[.]io`.
 
