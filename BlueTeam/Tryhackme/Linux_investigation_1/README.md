@@ -92,7 +92,7 @@ An IT department employee at CyberT, a client company, was arrested for running 
 **Screenshot**: ![Created File](screenshots/9.png)
 
 ### 10. Trigger Time of Malicious File
-**Question**: At what time will the malicious file trigger? (Format: HH:MM AM/PM)
+**Question**: At what time will the malicious file trigger? (Format: HH:MM AM/PM) (20 will be 8pm lol, sorry im severly sleep deprived)
 
 **Answer**: `08:00 AM`
 
