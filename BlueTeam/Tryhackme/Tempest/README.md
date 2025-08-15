@@ -254,6 +254,7 @@ As an Incident Responder, you are investigating a CRITICAL severity alert triage
 **Investigation**: Found `final.exe` connecting to port 8080 in Sysmon network events, distinct from the initial C2 port (80).
 
 **Screenshot**: ![C2 Port](screenshots/27.png)
+**Screenshot**: ![C2 Port](screenshots/28.png)
 
 ### Fully-Owned Machine
 #### 28. Account Names Created
